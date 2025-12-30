@@ -8,94 +8,114 @@
 body {
     background: #f4f6f8;
     color: #333;
+    font-size: 18px; /* ⬆ overall font size */
+    line-height: 1.7;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 950px;
     margin: 40px auto;
     background: #ffffff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 
+/* HEADER */
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 44px; /* ⬆ name big */
     color: #1a237e;
+    font-weight: 700;
 }
 
 header h2 {
-    font-size: 18px;
-    margin-top: 8px;
+    font-size: 22px; /* ⬆ subtitle */
+    margin-top: 10px;
     font-weight: 500;
 }
 
 header p {
-    margin-top: 6px;
-    font-size: 14px;
+    margin-top: 8px;
+    font-size: 16px;
 }
 
+/* SECTIONS */
 section {
-    margin-bottom: 28px;
+    margin-bottom: 35px;
 }
 
 section h3 {
-    border-bottom: 2px solid #1a237e;
-    padding-bottom: 6px;
-    margin-bottom: 12px;
+    border-bottom: 3px solid #1a237e;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
     color: #1a237e;
+    font-size: 24px; /* ⬆ section heading */
 }
 
+/* CONTENT */
 .item h4 {
-    font-size: 16px;
-    margin-bottom: 6px;
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 8px;
 }
 
 ul {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 ul li {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    font-size: 17px;
 }
 
+/* SKILLS GRID (even though you changed layout, kept safe) */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
 }
 
+/* INLINE SKILLS */
 .inline-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     list-style: none;
 }
 
 .inline-list li {
     background: #e3e7ff;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 13px;
+    padding: 8px 16px;
+    border-radius: 22px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
+/* LINKS */
 a {
     color: #1a237e;
     text-decoration: none;
+    font-weight: 500;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
-    font-size: 12px;
-    margin-top: 30px;
+    font-size: 14px;
+    margin-top: 40px;
     color: #777;
 }
